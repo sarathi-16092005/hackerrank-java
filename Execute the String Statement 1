@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+import java.util.Scanner;
+
+public class WelcomeMessage {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Reading input string
+        String name = scanner.nextLine();
+        
+        // Displaying output
+        System.out.println("Hai " + name + "!    Welcome to Programming Language...");
+        
+        scanner.close();
+    }
+}
