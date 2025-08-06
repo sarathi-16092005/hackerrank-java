@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+import java.util.Scanner;
+
+public class CollatzSequence {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input
+        System.out.println("Enter a number");
+        int number = scanner.nextInt();
+
+        int count = 0;
+        System.out.println(number);
+
+        // Apply rules until we reach 1
+        while (number != 1) {
+            if (number % 2 == 0) {
+                number = number / 2;
+            } else {
+                number = number * 3 + 1;
+            }
+            System.out.println(number);
+            count++;
+        }
+
+        // Print step count
+        System.out.println("count:" + count);
+
+        scanner.close();
+    }
+}
