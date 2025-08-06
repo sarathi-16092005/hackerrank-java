@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+import java.util.Scanner;
+
+public class CharacterCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read a single character input
+        String input = scanner.next();
+
+        // Check if the input is a single alphabet character
+        if (input.length() == 1 && Character.isLetter(input.charAt(0))) {
+            char ch = input.charAt(0);
+
+            // Check if character is a vowel (case-insensitive)
+            if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ||
+                ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                System.out.println("The Character " + ch + " is Vowel");
+            } else {
+                System.out.println("The Character " + ch + " is Consonant");
+            }
+        } else {
+            System.out.println("Invalid Input");
+        }
+
+        scanner.close();
+    }
+}
