@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+import java.util.Scanner;
+
+public class AlphabetPattern {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get input
+        int n = scanner.nextInt();
+
+        // Check constraints
+        if (n < 0 || n > 9) {
+            System.out.println("Invalid Input");
+        } else {
+            char ch = 'A'; // Starting character
+
+            for (int i = 1; i <= n; i++) {
+                for (int j = 1; j <= i; j++) {
+                    System.out.print(ch + " ");
+                    ch++;
+                }
+                System.out.println(); // New line after each row
+            }
+        }
+
+        scanner.close();
+    }
+}
