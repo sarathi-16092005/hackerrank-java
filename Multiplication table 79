@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+import java.util.Scanner;
+
+public class MultiplicationTable {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input
+        int n = scanner.nextInt();
+
+        // Constraint check
+        if (n >= 1 && n <= 9) {
+            // Print multiplication table from 1 to 5
+            for (int i = 1; i <= 5; i++) {
+                System.out.println(n + " x " + i + " = " + (n * i));
+            }
+        } else {
+            System.out.println("Invalid Input");
+        }
+
+        scanner.close();
+    }
+}
