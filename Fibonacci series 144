@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+import java.util.Scanner;
+
+public class FibonacciRangeSum {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input
+        int n = scanner.nextInt();
+        int m = scanner.nextInt();
+
+        // Check constraints
+        if (n < 1 || n > 20 || m < 1 || m > 20) {
+            System.out.println("Invalid Input");
+        } else {
+            // Generate Fibonacci up to the maximum of n and m
+            int max = Math.max(n, m);
+            int[] fib = new int[max + 1];
+            fib[0] = 0;
+            fib[1] = 1;
+
+            for (int i = 2; i <= max; i++) {
+                fib[i] = fib[i - 1] + fib[i - 2];
+            }
+
+            // Calculate sum in the given range
+            int sum = 0;
+            for (int i = Math.min(n, m); i <= Math.max(n, m); i++) {
+                sum += fib[i];
+            }
+
+            // Output
+            System.out.println("The Sum of Fibonacci value is " + (double) sum);
+        }
+
+        scanner.close();
+    }
+}
