@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+import java.util.Scanner;
+
+public class LargestOfThree {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+
+        // Output
+        if (a > b && a > c) {
+            System.out.println("a is largest then b and c");
+        } else if (b > a && b > c) {
+            System.out.println("b is largest then a and c");
+        } else if (c > a && c > b) {
+            System.out.println("c is largest then a and b");
+        } else {
+            System.out.println("There is a tie among the numbers");
+        }
+        
+        sc.close();
+    }
+}
