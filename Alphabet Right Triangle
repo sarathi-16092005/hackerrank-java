@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+import java.util.Scanner;
+
+public class AlphabetTrianglePattern {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input
+        int n = scanner.nextInt();
+
+        // Outer loop for rows
+        for (int i = 0; i < n; i++) {
+            char ch = (char) ('A' + i); // Starting character for this row
+
+            // Inner loop for columns
+            for (int j = 0; j <= i; j++) {
+                System.out.print(ch + " ");
+                ch++; // Move to next character
+            }
+
+            // Newline after each row
+            System.out.println();
+        }
+
+        scanner.close();
+    }
+}
