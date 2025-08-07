@@ -13,13 +13,12 @@ public class DigitProcessor {
         String str = Integer.toString(num);
 
         if (str.length() == 2) {
-            // Reverse two-digit number
+         
             System.out.println(str.charAt(1) + "" + str.charAt(0));
         } else if (str.length() > 2) {
-            // Extract first and second digit and reverse them
+       
             System.out.println(str.charAt(1) + "" + str.charAt(0));
         } 
-        // If single-digit, do not print anything (as per spec)
         
         scanner.close();
     }
