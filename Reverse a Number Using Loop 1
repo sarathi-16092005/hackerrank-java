@@ -9,11 +9,7 @@ import java.util.Scanner;
 public class ReverseNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Get input
         int number = scanner.nextInt();
-
-        // Check constraints
         if (number <= 0 || number >= 1000000000) {
             System.out.println("Invalid Input");
         } else {
