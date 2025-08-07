@@ -9,16 +9,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Input: 2-digit number
         int number = scanner.nextInt();
-
-        // Calculate the sum of the digits
         int firstDigit = number / 10;
         int secondDigit = number % 10;
         int sum = firstDigit + secondDigit;
-
-        // Output format
         System.out.println("Bird said:" + number);
         System.out.println("Alice must go in path-" + sum);
     }
