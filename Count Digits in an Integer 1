@@ -9,11 +9,7 @@ import java.util.Scanner;
 public class DigitCount {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Input
         long num = scanner.nextLong();
-
-        // Constraint check
         if (num < 1 || num >= 10000000) {
             System.out.println("Enter a Valid Input");
         } else {
