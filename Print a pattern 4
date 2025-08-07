@@ -9,11 +9,7 @@ import java.util.Scanner;
 public class AlphabetPattern {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Get input
         int n = scanner.nextInt();
-
-        // Check constraints
         if (n < 0 || n > 9) {
             System.out.println("Invalid Input");
         } else {
