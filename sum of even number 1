@@ -10,11 +10,11 @@ public class EvenSumInRange {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input
+       
         int n = scanner.nextInt();
         int m = scanner.nextInt();
 
-        // Constraint check
+    
         if (n <= 0 || m <= 0 || n >= 30 || m >= 30) {
             System.out.println("Invalid Input");
         } else {
@@ -22,7 +22,6 @@ public class EvenSumInRange {
             int end = Math.max(n, m);
             int sum = 0;
 
-            // Sum of even numbers between start and end
             for (int i = start; i <= end; i++) {
                 if (i % 2 == 0) {
                     sum += i;
