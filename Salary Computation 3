@@ -9,14 +9,8 @@ import java.util.Scanner;
 public class GrossSalaryCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Read basic salary from input
         int basicSalary = scanner.nextInt();
-
-        // Calculate HRA (40%) and DA (65%)
         double grossSalary = basicSalary * 2.05;
-
-        // Print result with 2 decimal places
         System.out.printf("%.2f", grossSalary);
     }
 }
