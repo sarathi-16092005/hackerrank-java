@@ -17,12 +17,8 @@ public class StudentMarks {
         int m3 = scanner.nextInt();
         int m4 = scanner.nextInt();
         int m5 = scanner.nextInt();
-
-        // Calculate total and average
         int total = m1 + m2 + m3 + m4 + m5;
         double average = total / 5.0;
-
-        // Determine grade
         String grade;
         if (average >= 90) {
             grade = "A";
@@ -35,8 +31,6 @@ public class StudentMarks {
         } else {
             grade = "F";
         }
-
-        // Output
         System.out.println("Name of the Student:" + name);
         System.out.println("Total Mark:" + total);
         System.out.printf("Average Mark:%.1f\n", average);
