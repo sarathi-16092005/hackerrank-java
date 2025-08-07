@@ -9,8 +9,6 @@ import java.util.Scanner;
 public class StudentMarks {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Reading inputs
         String name = scanner.nextLine();
         int m1 = scanner.nextInt();
         int m2 = scanner.nextInt();
