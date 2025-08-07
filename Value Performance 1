@@ -9,17 +9,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Read integer input
         int intNumber = scanner.nextInt();
-
-        // Read float input
         float floatNumber = scanner.nextFloat();
-
-        // Output the integer
         System.out.println(intNumber);
-
-        // Output the float rounded to 2 decimal places
         System.out.printf("%.2f\n", floatNumber);
         
         scanner.close();
