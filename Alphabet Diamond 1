@@ -9,43 +9,27 @@ import java.util.Scanner;
 public class AlphabetDiamondPattern {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Input
         int n = scanner.nextInt();
-
-        // Upper half including middle line
         for (int i = 1; i <= n; i++) {
-            // Print spaces
             for (int s = 1; s <= n - i; s++) {
                 System.out.print(" ");
             }
-
-            // Print alphabets
             char ch = 'A';
             for (int j = 1; j <= i; j++) {
                 System.out.print(ch + " ");
                 ch++;
             }
-
-            // Move to next line
             System.out.println();
         }
-
-        // Lower half
         for (int i = n - 1; i >= 1; i--) {
-            // Print spaces
             for (int s = 1; s <= n - i; s++) {
                 System.out.print(" ");
             }
-
-            // Print alphabets
             char ch = 'A';
             for (int j = 1; j <= i; j++) {
                 System.out.print(ch + " ");
                 ch++;
             }
-
-            // Move to next line
             System.out.println();
         }
 
