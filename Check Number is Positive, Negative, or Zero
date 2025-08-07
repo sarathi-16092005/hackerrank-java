@@ -9,11 +9,7 @@ import java.util.Scanner;
 public class NumberCheck {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
-        // Input Format: Get one integer value
         int number = sc.nextInt();
-        
-        // Output Format: print whether it is Positive, Negative, or Zero
         if (number > 0) {
             System.out.println("positive");
         } else if (number < 0) {
