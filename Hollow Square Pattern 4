@@ -19,7 +19,6 @@ public class HollowSquarePattern {
                     System.out.print(" ");
                 }
             }
-            // Move to next line after each row
             System.out.println();
         }
 
