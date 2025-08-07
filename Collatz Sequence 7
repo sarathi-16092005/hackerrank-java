@@ -23,8 +23,6 @@ public class CollatzSequence {
             System.out.println(number);
             count++;
         }
-
-        // Print step count
         System.out.println("count:" + count);
 
         scanner.close();
