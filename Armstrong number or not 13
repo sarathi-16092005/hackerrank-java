@@ -9,11 +9,7 @@ import java.util.Scanner;
 public class ThreeDigitCheck {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Input
         int number = scanner.nextInt();
-
-        // Check if number is a 3-digit integer
         if (number >= 100 && number <= 999) {
             System.out.println("Yes");
         } else {
