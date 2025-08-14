@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+import java.util.Scanner;
+
+public class ConcatenateStrings {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String first = scanner.nextLine();
+        String second = scanner.nextLine();
+      
+        String result = first + second;
+     
+        System.out.println(result);
+    }
+}
