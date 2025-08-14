@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+import java.util.*;
+
+public class CheckRepeatedCharacter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine();
+
+        Set<Character> seen = new HashSet<>();
+        boolean repeated = false;
+
+        for (char c : s.toCharArray()) {
+            if (seen.contains(c)) {
+                repeated = true;
+                break;
+            } else {
+                seen.add(c);
+            }
+        }
+
+        if (repeated) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
